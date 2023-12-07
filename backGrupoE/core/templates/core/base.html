@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% block title %}{% endblock %} TecnoMakcell</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/inicio.css' %}">
+    <link rel="icon" href="{% static 'core/imagennostros/icon.ico' %}" type="image/x-icon">
+    <link rel="stylesheet" href="{% static 'core/css/footer.css' %}">
+</head>
+<body>
+
+    <header class="header">
+        <a href="#" class="logo"><img src="{% static 'core/imagennostros/Tecno MakCell.png' %}"></a>
+
+        <nav class="navbar">
+            <a href="{% url 'index' %}">Inicio</a>
+            <a href="{% url 'cotizarreparacion' %}">Cotizar reparación</a>
+            <a href="{% url 'tienda' %}">Tienda</a>
+            <a href="{% url 'nosotros' %}">Nosotros</a>
+        </nav>
+
+    </header>
+
+    {% block content %}{% endblock %}
+
+</body>
+</html>

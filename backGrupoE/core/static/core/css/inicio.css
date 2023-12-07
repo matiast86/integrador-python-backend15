@@ -1,0 +1,158 @@
+.primer_bloque{
+    margin-top: 70px;
+    margin-bottom: 90px;
+    height: 400px;
+}
+
+.primer_bloque h1{
+    font-size: 30px;
+    text-align: center;
+
+}
+
+.primer_bloque p{
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 35px;
+    font-size: 20px;
+}
+
+.marcas{
+    width: 80%;
+    display: flex;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+
+.marcas img{
+    width: 90px;
+    background-color: #cce0a8;
+    padding: 40px;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+}
+
+.inicio{
+    background-image: url(../imagennostros/fondo_reparacion.png);
+    height: 700px;
+    margin-top: 40px;
+    padding-top: 20px;
+
+}
+
+.inicio h2{
+    padding-top: 200px;
+    padding-bottom: 20px;
+    color: aliceblue;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 5px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.inicio p{
+    color: #ffffff;
+    text-align: center;
+    font-size: 30px;
+    text-shadow: 5px 4px 20px rgba(0, 0, 0, 0.5);
+}
+
+.inicio a{
+    margin-top: 20px;
+    display: block;
+    color: aliceblue;
+    border: 3px solid;
+    border-color: aliceblue;
+    width: 200px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-decoration: none;
+}
+
+.como_funciona{
+    display: flex;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    justify-content: space-around;
+}
+
+.como_funciona img{
+    width: 300px;
+}
+
+.como_funciona h3{
+    font-size: 30px;
+    text-align: center;
+}
+
+.como_funciona p{
+    text-align: center;
+}
+
+.pasos{
+    width: 20%;
+}
+
+#tercer_bloque{
+    padding-top: 30px;
+    margin-top: 40px;
+    height: 550px;
+}
+
+#tercer_bloque h2{
+    text-align: center;
+    font-size: 32px;
+
+}
+
+.cuarto_bloque{
+    width: 100%;
+}
+
+.redes{
+    background-color: #FDFFAE;
+    font-size: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.redes h2{
+    padding-bottom: 20px;
+}
+
+.redes div{
+    text-align: center;
+    margin-left: -400px;
+}
+
+.red{
+    padding: 5px;
+    display: flex;
+    justify-content:flex-start;
+    margin-left: 105px;
+}
+
+.red img{
+    width: 30px;
+    padding-right: 20px;
+}
+
+.red a{
+    text-decoration: none;
+    color: rgb(179, 74, 74);
+}
+
+
+

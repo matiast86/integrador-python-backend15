@@ -1,0 +1,71 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+
+    {% load static %}
+
+    <div class="primer_bloque"> <!-- dentro de este div ira todo el contenido de la pagina, exceptuando header y footer -->
+        <h1>¿Tuviste algun problema en tu equipo?</h1>
+        <p>No te preocupes. <strong>Estas en el lugar correcto.</strong> <br> Tenemos mas de 5 años de experiencia en el rubro de soporte técnico de celulares <br> y trabajamos con las principales marcas.</p>
+        <section class="marcas">
+            <img src="{% static 'core/imagennostros/apple.png' %}">
+            <img src="{% static 'core/imagennostros/samsung.png' %}">
+            <img src="{% static 'core/imagennostros/xiaomi.png' %}">
+            <img src="{% static 'core/imagennostros/motorola.png' %}">
+        </section>
+    </div>
+
+    <div class="inicio">
+        <h2>Servicio técnico y reparación de equipos</h2>
+        <p>Lo revisamos en el momento, te realizamos un diagnóstico completo <br> y en pocas horas lo tenés como nuevo</p>
+        <a href="{% url 'cotizarreparacion' %}">COTIZAR AHORA</a>
+    </div>
+
+
+    <div id="tercer_bloque">
+        <h2>¿Cómo funciona?</h2>
+        <section class="como_funciona">
+            <article class="pasos">
+                <img src="{% static 'core/imagennostros/motito.svg' %}" alt="imagen moto">
+                <h3>01.</h3>
+                <p>Buscamos tu equipo en la fecha pactada o lo venís a dejar a nuestra sucursal.</p>
+            </article>
+    
+            <article class="pasos">
+                <img src="{% static 'core/imagennostros/reparacion.svg' %}" alt="imagen reparacion">
+                <h3>02.</h3>
+                <p>Ya en nuestro laboratorio, evaluamos el problema del equipo y luego procedemos a repararlo.</p>
+            </article>
+    
+            <article class="pasos">
+                <img src="{% static 'core/imagennostros/telefono.svg' %}" alt="imagen telefono">
+                <h3>03.</h3>
+                <p>Una vez realizado el test final, te lo devolvemos como nuevo y listo para usar.</p>
+            </article>
+        </section>
+    </div>
+
+    <div class="cuarto_bloque">
+        <div class="redes">
+            <img src="{% static 'core/imagennostros/redes.png' %}" alt="redes sociales de tecno makcell">
+            <div>
+                <h2>SEGUINOS EN NUESTRAS REDES</h2>
+                <article class="red">
+                    <img src="{% static 'core/iconosredes/1491580635-yumminkysocialmedia26_83102.png' %}" alt="logo instagram">
+                    <a href="https://www.instagram.com/tecnomakcell/" target="_blank">@tecnomakcell</a>
+                </article>
+                <article class="red">
+                    <img src="{% static 'core/iconosredes/1490889652-facebook_82510.png' %}" alt="logo facebook">
+                    <a href="https://www.facebook.com/tecnomakcell" target="_blank">Tecno MakCell</a>
+                </article>
+                <article class="red">
+                    <img src="{% static 'core/iconosredes/1490889687-whats-app_82529.png' %}" alt="logo whatsapp">
+                    <a href="https://wa.me/541536757264" target="_blank">1536757264</a> 
+                </article>
+            </div>
+        </div>
+    </div>
+
+    {% include "core/footer.html" %}
+
+{% endblock %}
