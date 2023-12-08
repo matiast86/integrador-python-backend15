@@ -21,7 +21,7 @@ from core import views
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.index, name='index'),
-    path('', views.cotizarreparacion, name='cotizarreparacion'),
-    path('', views.tienda, name='tienda'),
-    path('', views.nosotros, name='nosotros'),
+    path('cotizarreparacion', views.cotizarreparacion, name='cotizarreparacion'),
+    path('tienda', views.tienda, name='tienda'),
+    path('nosotros', views.nosotros, name='nosotros'),
 ]

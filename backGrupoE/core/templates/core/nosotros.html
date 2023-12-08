@@ -1,0 +1,52 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'core/css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'core/css/nosotros.css' %}">
+
+    <div class="contenido"> <!-- dentro de este div ira todo el contenido de la pagina, exceptuando header y footer -->
+        <span><strong>Especialistas en reparaciones de artículos de electrónica </strong></span>
+        <h1>Somos TechnoMakcell</h1>
+        <div class="imagen_principal">
+            <img src="{% static 'core/imagennostros/frente_negocio.jpg' %}" alt="frente del negocio">
+            <main>
+                <h2>¿Por qué elegirnos?</h2>
+                <p>Hace más de 5 años hacemos que cualquier rotura o problema que sufran tus dispositivos electrónicos más queridos, sean un trámite que solucionás en un par de horas. Somos aficionados a la tecnología y nos      capacitamos para brindarte un gran servicio con los mejores insumos y repuestos del mercado.</p>
+            </main>
+
+
+        </div>
+    </div>
+
+    <div class="mapa">
+        <div>
+            <h2>¡TENEMOS LOCAL FÍSICO!</h2>
+            <p>Encontranos en Berazategui: <br>Calle 1 2852 entre 128 A y Av. Varela</p>
+        </div>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d409.72556937254575!2d-58.24025461087139!3d-34.76051586628876!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95a32edead71ec05%3A0xbc3b77e314a557cb!2sC.%201%202852%2C%20B1884AEZ%20Berazategui%20Oeste%2C%20Provincia%20de%20Buenos%20Aires!5e0!3m2!1ses!2sar!4v1697531292636!5m2!1ses!2sar" width="500" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <div class="redes">
+        <img src="{% static 'core/imagennostros/redes.png' %}" alt="redes sociales de tecno makcell">
+        <div>
+            <h2>SEGUINOS EN NUESTRAS REDES</h2>
+            <article class="red">
+                <img src="{% static 'core/iconosredes/1491580635-yumminkysocialmedia26_83102.png' %}" alt="logo instagram">
+                <a href="https://www.instagram.com/tecnomakcell/" target="_blank">@tecnomakcell</a>
+            </article>
+            <article class="red">
+                <img src="{% static 'core/iconosredes/1490889652-facebook_82510.png' %}" alt="logo facebook">
+                <a href="https://www.facebook.com/tecnomakcell" target="_blank">Tecno MakCell</a>
+            </article>
+            <article class="red">
+                <img src="{% static 'core/iconosredes/1490889687-whats-app_82529.png' %}" alt="logo whatsapp">
+                <a href="https://wa.me/541536757264" target="_blank">1536757264</a> 
+            </article>
+        </div>
+    </div>
+
+{% include "core/footer.html" %}
+
+{% endblock %}
