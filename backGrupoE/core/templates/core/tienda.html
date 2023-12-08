@@ -1,0 +1,165 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+
+    {% load static %}
+
+    <link rel="stylesheet" href="{% static 'core/css/tienda.css' %}">
+
+    <div class="contenido"> <!-- dentro de este div ira todo el contenido de la pagina, exceptuando header y footer -->
+        <h1 id="contenido1">Bienvenidos a la tienda de TechnoMakCell</h1>
+        <p id="contenido2">¿Querés recibir nuestras ofertas? ¡Registrate ya mismo y comenzá a disfrutarlas!.</p>
+        <label for="email">Email: </label>
+        <input type="text" name="email" id="email">  
+        <input type="submit" value="Enviar">
+    </div>
+    <br><br>
+        <!--Apartir de aca muestra de productos  -->
+    <div class="fila">
+        <div class="columna ">
+            <p id="descripcion">Adaptador otg</p>
+            <img src="{% static 'core/imagentienda/Adaptador otg.jpg' %}">
+            <p id="precio">$1000</p>
+            <input type="button" id="viewalerta" value="Carrito" class="primary-button add-to-cart-button" >
+        
+
+        </div>
+        <div class="columna">
+            <p id="descripcion">Auricular Only</p>
+            <img src="{% static 'core/imagentienda/Auriculares  Earphone Only.jpg' %}">
+            <p>$5000</p>
+            <input type="button" id="viewalerta1" value="Carrito" class="primary-button add-to-cart-button" >
+        </div>
+        <div class="columna">
+            <p id="descripcion">Auricular GTC</p>
+            <img src="{% static 'core/imagentienda/Auriculares Gtc con diseñoa.jpg' %}">
+            <p>$2000</p>
+            <input type="button" id="viewalerta2" value="Carrito" class="primary-button add-to-cart-button" >
+        </div>
+        <div class="columna">
+            <p id="descripcion">Cable Auxiliar</p>
+            <img src="{% static 'core/imagentienda/Cable auxiliar.jpg' %}">
+            <p>$2500</p>
+            <input type="button" id="viewalerta3" value="Carrito" class="primary-button add-to-cart-button" >
+        </div>
+        <div class="columna">
+            <p id="descripcion">Bateria J2</p>
+            <img src="{% static 'core/imagentienda/bateriasj2j7.jpg' %}">
+            <p>$6000</p>
+            <input type="button" id="viewalerta4" value="Carrito" class="primary-button add-to-cart-button" >
+        </div>
+        <div class="columna">
+            <p id="descripcion">Cable RCA</p>
+            <img src="{% static 'core/imagentienda/Cable RCA audio 2 a 1.jpg' %}">
+            <p>$2000</p>
+            <input type="button" id="viewalerta5" value="Carrito" class="primary-button add-to-cart-button" >
+        </div>
+        <div class="columna">
+            <p id="descripcion">Soprte Celular</p>
+            <img src="{% static 'core/imagentienda/Soporte de celualar para auto3.jpg' %}">
+            <p>$2000</p>
+            <input type="button" id="viewalerta6" value="Carrito" class="primary-button add-to-cart-button" >
+        </div>
+        <div class="columna">
+            <p id="descripcion">USB Iphone</p>
+            <img src="{% static 'core/imagentienda/Cable usb iphone Lion.jpg' %}">
+            <p>$2000</p>
+            <input type="button" id="viewalerta7" value="Carrito" class="primary-button add-to-cart-button" >
+        </div>
+        <div class="columna">
+            <p id="descripcion">USB Only </p>
+            <img src="{% static 'core/imagentienda/Cable usb only.jpg' %}">
+            <p>$2000</p>
+            <input type="button" id="viewalerta8" value="Carrito" class="primary-button add-to-cart-button" >
+        </div>
+        <div class="columna">
+            <p id="descripcion">USB 2mtros</p>
+            <img src="{% static 'core/imagentienda/Cable usb de 2 metros.jpg' %}">
+            <p>$2000</p>
+            <input type="button" id="viewalerta9" value="Carrito" class="primary-button add-to-cart-button" >
+        </div>
+    </div>
+    <br><br>
+        
+    <div class="fila">
+        <div class="columna">
+            <p id="descripcion">Ring celular </p>
+            <img src="{% static 'core/imagentienda/Ring para el celu.jpg' %}">
+            <p id="precio">$2000</p>
+            <input type="button" id="viewalerta10" value="Carrito" class="primary-button add-to-cart-button" >
+        </div>
+        <div class="columna">
+            <p id="descripcion">Auricular Only g</p>
+            <img src="{% static 'core/imagentienda/Auriculare rompeoidos.jpg' %}">
+            <p>$3000</p>
+            <input type="button" id="viewalerta11" value="Carrito" class="primary-button add-to-cart-button" >
+        </div>
+        <div class="columna">
+            <p id="descripcion">Auricular s10</p>
+            <img src="{% static 'core/imagentienda/Auriculares Samsung akg.jpg' %}">
+            <p>$3000</p>
+            <input type="button" id="viewalerta12" value="Carrito" class="primary-button add-to-cart-button" >
+        </div>
+        <div class="columna">
+            <p id="descripcion">Pad Only</p>
+            <img src="{% static 'core/imagentienda/Mouse Pad Only.jpg' %}">
+            <p>$2000</p>
+            <input type="button" id="viewalerta13" value="Carrito" class="primary-button add-to-cart-button" >
+        </div>
+        <div class="columna">
+            <p id="descripcion">Parlane Only</p>
+            <img src="{% static 'core/imagentienda/Parlante bluetooh Only.jpg' %}">
+            <p>$12000</p>
+            <input type="button" id="viewalerta14" value="Carrito" class="primary-button add-to-cart-button" >
+        </div>
+        
+
+        <div class="columna">
+            <p id="descripcion">Manitos</p>
+            <img src="{% static 'core/imagentienda/Manitos.jpg' %}">
+            <p>$2000</p>
+            <input type="button" id="viewalerta15" value="Carrito" class="primary-button add-to-cart-button" >
+        </div>
+        <div class="columna ">
+            <p id="descripcion">Microfono</p>
+            <img src="{% static 'core/imagentienda/Micrófono Lavalier.jpg' %}">
+            <p>$15000</p>
+            <input type="button" id="viewalerta16" value="Carrito" class="primary-button add-to-cart-button" >
+        </div>
+        <div class="columna">
+            <p id="descripcion">Joystick</p>
+            <img src="{% static 'core/imagentienda/Joystick para celular.jpg' %}">
+            <p>$20000</p>
+            <input type="button" id="viewalerta20" value="Carrito" class="primary-button add-to-cart-button" >
+        </div>
+        <div class="columna">
+            <p id="descripcion">Cagador Inova</p>
+            <img src="{% static 'core/imagentienda/cargador universa.jpg' %}">
+            <p>$5000</p>
+            <input type="button" id="viewalerta18" value="Carrito" class="primary-button add-to-cart-button" >
+        </div>
+        <div class="columna">
+            <p id="descripcion">Mouse Gamer</p>
+            <img src="{% static 'core/imagentienda/Mouse Gamer.jpg' %}">
+            <p>$5000</p>
+            <input type="button" id="viewalerta19" value="Carrito" class="primary-button add-to-cart-button" >
+        </div>
+    </div>
+    <br><br>
+        <!-- a parti de aca footer(contato y redes) -->
+    <footer>
+        <div id="datos">
+            <p>Estamos en calle 1 y 128 A . Berazategui</p>
+            <p>Teled:011-5555-5555</p>
+            <p>e-Mail: tecnomakcell@gmail.com</p>
+        </div>
+        <div id="redes">
+            <a href=""><img class="redes"  src="{% static 'core/iconosredes/1490889687-whats-app_82529.ico' %}" alt="">1536757264</a> 
+            <a href="https://www.facebook.com/tecnomakcell"><img class="redes"  src="{% static 'core/iconosredes/1490889652-facebook_82510.png' %}" alt="">Tecno MakCell</a>
+            <a href="https://www.instagram.com/tecnomakcell/?hl=es"><img class="redes"  src="{% static 'core/iconosredes/iconfinder-social-media-applications-3instagram-4102579_113804.ico' %}"alt="">@tecnomakcell</a> 
+        </div>
+    </footer>
+
+    <script src="{% static 'core/js/alertas.js' %}"></script>
+
+{% endblock %}
