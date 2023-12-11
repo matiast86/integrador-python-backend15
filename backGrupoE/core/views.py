@@ -8,8 +8,6 @@ def index(request):
 def cotizarreparacion(request):
     return render(request, "core/cotizarreparacion.html")
 
-def tienda(request):
-    return render(request, "core/tienda.html")
 
 def nosotros(request):
     return render(request, "core/nosotros.html")

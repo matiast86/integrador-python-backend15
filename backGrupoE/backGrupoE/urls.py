@@ -16,15 +16,16 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path
-from core import views
+from core import views as core_views
+from tienda import views as tienda_views
 from django.conf import settings
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.index, name='index'),
-    path('cotizarreparacion', views.cotizarreparacion, name='cotizarreparacion'),
-    path('tienda', views.tienda, name='tienda'),
-    path('nosotros', views.nosotros, name='nosotros'),
+    path('', core_views.index, name='index'),
+    path('cotizarreparacion', core_views.cotizarreparacion, name='cotizarreparacion'),
+    path('tienda', tienda_views.tienda, name='tienda'),
+    path('nosotros', core_views.nosotros, name='nosotros'),
 ]
 
 if settings.DEBUG:

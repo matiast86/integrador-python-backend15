@@ -1,0 +1,47 @@
+{% extends "core/base.html" %}
+
+{% block content %}
+
+{% load static%}
+
+    {% for project in projects %}
+
+
+
+    <link rel="stylesheet" href="{% static 'core/css/tienda.css' %}">
+
+    <div class="contenido"> <!-- dentro de este div ira todo el contenido de la pagina, exceptuando header y footer -->
+        <h1 id="contenido1">Bienvenidos a la tienda de TechnoMakCell</h1>
+        <p id="contenido2">¿Querés recibir nuestras ofertas? ¡Registrate ya mismo y comenzá a disfrutarlas!.</p>
+        <label for="email">Email: </label>
+        <input type="text" name="email" id="email">  
+        <input type="submit" value="Enviar">
+    </div>
+    <br><br>
+        <!--Apartir de aca muestra de productos  -->
+    <div class="fila">
+        <div class="columna ">
+            <p id="descripcion">{{project.title}}</p>
+            <img src="{{project.image}}">
+            <p id="precio">{{project.precio}}</p>
+            <input type="button" id="viewalerta" value="Carrito" class="primary-button add-to-cart-button" >
+        
+    <br><br>
+        <!-- a parti de aca footer(contato y redes) -->
+    <footer>
+        <div id="datos">
+            <p>Estamos en calle 1 y 128 A . Berazategui</p>
+            <p>Teled:011-5555-5555</p>
+            <p>e-Mail: tecnomakcell@gmail.com</p>
+        </div>
+        <div id="redes">
+            <a href=""><img class="redes"  src="{% static 'core/iconosredes/1490889687-whats-app_82529.ico' %}" alt="">1536757264</a> 
+            <a href="https://www.facebook.com/tecnomakcell"><img class="redes"  src="{% static 'core/iconosredes/1490889652-facebook_82510.png' %}" alt="">Tecno MakCell</a>
+            <a href="https://www.instagram.com/tecnomakcell/?hl=es"><img class="redes"  src="{% static 'core/iconosredes/iconfinder-social-media-applications-3instagram-4102579_113804.ico' %}"alt="">@tecnomakcell</a> 
+        </div>
+    </footer>
+
+    <script src="{% static 'core/js/alertas.js' %}"></script>
+
+    {% endfor %}
+    {% endblock %}
