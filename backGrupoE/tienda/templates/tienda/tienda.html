@@ -4,10 +4,6 @@
 
 {% load static%}
 
-    {% for project in projects %}
-
-
-
     <link rel="stylesheet" href="{% static 'core/css/tienda.css' %}">
 
     <div class="contenido"> <!-- dentro de este div ira todo el contenido de la pagina, exceptuando header y footer -->
@@ -18,15 +14,30 @@
         <input type="submit" value="Enviar">
     </div>
     <br><br>
-        <!--Apartir de aca muestra de productos  -->
+
+    {% comment %} {% for project in projects %} {% endcomment %}
+
+    <!--Apartir de aca muestra de productos  -->
+    
     <div class="fila">
-        <div class="columna ">
-            <p id="descripcion">{{project.title}}</p>
-            <img src="{{project.image}}">
-            <p id="precio">{{project.precio}}</p>
-            <input type="button" id="viewalerta" value="Carrito" class="primary-button add-to-cart-button" >
-        
-    <br><br>
+
+        {% for project in projects %}
+
+            <div class="columna">
+                
+                <p id="descripcion">{{project.title}}</p>
+                <img src="{{project.image.url}}">
+                <p id="precio">{{project.precio}} $</p>
+                <input type="button" id="viewalerta" value="Carrito" class="primary-button add-to-cart-button">
+                
+            </div>
+
+        {% endfor %}
+
+    </div>
+
+    {% comment %} {% endfor %} {% endcomment %}
+    
         <!-- a parti de aca footer(contato y redes) -->
     <footer>
         <div id="datos">
@@ -43,5 +54,4 @@
 
     <script src="{% static 'core/js/alertas.js' %}"></script>
 
-    {% endfor %}
-    {% endblock %}
+{% endblock %}
