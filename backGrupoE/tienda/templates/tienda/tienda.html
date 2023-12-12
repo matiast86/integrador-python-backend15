@@ -20,20 +20,20 @@
     <!--Apartir de aca muestra de productos  -->
     
     <div class="fila">
-
+        
         {% for project in projects %}
-
+            
             <div class="columna">
                 
                 <p id="descripcion">{{project.title}}</p>
                 <img src="{{project.image.url}}">
                 <p id="precio">{{project.precio}} $</p>
                 <input type="button" id="viewalerta" value="Carrito" class="primary-button add-to-cart-button">
-                
+                <br>
             </div>
 
         {% endfor %}
-
+        
     </div>
 
     {% comment %} {% endfor %} {% endcomment %}
